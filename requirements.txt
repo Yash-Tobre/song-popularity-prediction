@@ -4,3 +4,4 @@ pandas
 numpy
 ipykernel
 spotipy
+python-dotenv
