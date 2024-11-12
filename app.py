@@ -56,8 +56,8 @@ st.markdown("""
 
 
 load_dotenv()
-SPOTIFY_CLIENT_ID = st.secrets("SPOTIFY_CLIENT_ID")
-SPOTIFY_CLIENT_SECRET = st.secrets("SPOTIFY_CLIENT_SECRET")
+SPOTIFY_CLIENT_ID = st.secrets["SPOTIFY_CLIENT_ID"]
+SPOTIFY_CLIENT_SECRET = st.secrets["SPOTIFY_CLIENT_SECRET"]
 
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
     client_id=SPOTIFY_CLIENT_ID, client_secret=SPOTIFY_CLIENT_SECRET))
